@@ -16,7 +16,7 @@ function Header(){
                         </div>
                         <div className="select-wrp">
                             <select data-placeholder="Choose Location">
-                                <option>CHOOSE LOCATION</option>
+                                <option>ELEGIR LA UBICACIÓN</option>
                                 <option>New york</option>
                                 <option>Washington</option>
                                 <option>Chicago</option>
@@ -24,7 +24,7 @@ function Header(){
                             </select>
                         </div>
                         <div className="topbar-register">
-                            <a className="log-popup-btn" href="#" title="Login" >LOGIN</a> / <a className="sign-popup-btn" href="#" title="Register" >REGISTER</a>
+                            <a className="log-popup-btn" href="#" title="Login" >INICIAR  SESIÓN</a> / <a className="sign-popup-btn" href="#" title="Register" >REGISTRASTE</a>
                         </div>
                         <div className="social1">
                             <a href="#" title="Facebook"  target="_blank"><i className="fa fa-facebook-square"></i></a>

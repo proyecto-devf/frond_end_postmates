@@ -15,7 +15,7 @@ function Home() {
 						<div style={{ backgroundImage: `url(${image})` }} className="fixed-bg"></div>
 						<div className="restaurant-searching text-center">
 							<div className="restaurant-searching-inner">
-								<h2>Order <span>Food Online From</span> the Best Restaurants</h2>
+								<h2>Ordene <span>Comida en Línea </span> de los Mejores Restaurantes</h2>
 								<form className="restaurant-search-form brd-rd2">
 									<div className="row mrg10">
 										<div className="col-md-6 col-sm-5 col-lg-5 col-xs-12">
@@ -25,7 +25,7 @@ function Home() {
 											{/* <div className="input-field brd-rd2"><i className="fa fa-map-marker"></i><input className="brd-rd2" type="text" placeholder="Search Location"><i className="fa fa-location-arrow"></i></div> */}
 										</div>
 										<div className="col-md-2 col-sm-3 col-lg-3 col-xs-12">
-											<button className="brd-rd2 red-bg" type="submit">SEARCH</button>
+											<button className="brd-rd2 red-bg" type="submit">BUSCAR</button>
 										</div>
 									</div>
 								</form>
@@ -42,8 +42,8 @@ function Home() {
 							<div className="col-md-12 col-sm-12 col-lg-12">
 								<div className="title1-wrapper text-center">
 									<div className="title1-inner">
-										<span>Your Favourite Food</span>
-										<h2 >Choose & Enjoy</h2>
+										<span>SU COMIDA FAVORITA</span>
+										<h2 >Elija & Disfrute</h2>
 									</div>
 								</div>
 							</div>
