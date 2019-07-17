@@ -7109,8 +7109,14 @@ a.thanks-close:focus {color: #333;}
 .featured-restaurant-box.with-bg .post-meta{padding-left: 0;}
 .about-feat.text-center > img{width: 100%;}
 
+.registro {
+ margin-top: 150px;
+}
 
-
+.restaurant-info-form{
+  z-index: 10;
+  background-color: #FFF;
+}
 
 
 

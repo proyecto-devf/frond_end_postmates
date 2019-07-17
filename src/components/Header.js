@@ -1,11 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 function Header(){
     return (
         <header className="stick">
                 <div className="topbar">
                     <div className="container">
-                        <div className="select-wrp">
+                        {/* <div className="select-wrp">
                             <select data-placeholder="Feel Like Eating">
                                 <option>FEEL LIKE EATING</option>
                                 <option>Burger</option>
@@ -22,7 +24,7 @@ function Header(){
                                 <option>Chicago</option>
                                 <option>Los Angeles</option>
                             </select>
-                        </div>
+                        </div> */}
                         <div className="topbar-register">
                             <a className="log-popup-btn" href="#" title="Login" >LOGIN</a> / <a className="sign-popup-btn" href="#" title="Register" >REGISTER</a>
                         </div>
@@ -99,7 +101,10 @@ function Header(){
                                                 <li><a href="gallery-detail.html" title="GALLERY DETAIL" >GALLERY DETAIL</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="register-reservation.html" title="REGISTER RESERVATION" >REGISTER RESERVATION</a></li>
+                                        <li>
+                                            {/* <a href="register-reservation.html" title="REGISTER RESERVATION" ></a> */}
+                                            <Link to="/Restaurante" >REGISTER RESERVATION</Link>    
+                                        </li>
                                         <li><a href="how-it-works.html" title="HOW IT WORKS" >HOW IT WORKS</a></li>
                                         <li><a href="dashboard.html" title="USER PROFILE" >USER PROFILE</a></li>
                                         <li><a href="about-us.html" title="ABOUT US" >ABOUT US</a></li>
@@ -108,7 +113,9 @@ function Header(){
                                 </li>
                                 <li><a href="contact.html" title="CONTACT US" ><span className="red-clr">REAL FOOD</span>CONTACT US</a></li>
                             </ul>
-                            <a className="red-bg brd-rd4" href="register-reservation.html" title="Register" >REGISTER RESTAURANT</a>
+                            {/* <a  href="register-reservation.html"  >REGISTER RESTAURANT</a> */}
+                            <Link to="/Restaurante" className="red-bg brd-rd4" title="Register" >REGISTER RESERVATION</Link>    
+
                         </div>
                     </nav>
                     </div>
