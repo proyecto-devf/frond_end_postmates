@@ -1,5 +1,6 @@
 import React from 'react';
 import imagen from '../images/resource/popular-dish-img1.jpg';
+import { Link } from 'react-router-dom';
 
 function Platillo() {
     return (
@@ -19,7 +20,7 @@ function Platillo() {
                     </h4>
                     <p >Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
                     <span className="price">$85.00</span>
-                    <a className="brd-rd2" href="food-detail.html" title="Order Now" >Order Now</a>
+                    <Link to="/Pedido" className="red-bg brd-rd4" title="Register" >Ordenar</Link>
                     <div className="restaurant-info">
                         {/* <img src="assets/images/resource/restaurant-logo1.png" alt="restaurant-logo1.png" itemprop="image"> */}
                         <div className="restaurant-info-inner">

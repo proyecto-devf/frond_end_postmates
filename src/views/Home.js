@@ -58,6 +58,8 @@ function Home() {
 										<Platillo />
 										<Platillo />
 										<Platillo />
+										<Platillo />
+										<Platillo />
 
 
 										
