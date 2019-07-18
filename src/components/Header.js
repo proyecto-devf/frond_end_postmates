@@ -26,7 +26,8 @@ function Header(){
                             </select>
                         </div> */}
                         <div className="topbar-register">
-                            <a className="log-popup-btn" href="#" title="Login" >LOGIN</a> / <a className="sign-popup-btn" href="#" title="Register" >REGISTER</a>
+                            {/*<a className="log-popup-btn" href="#" title="Login" >LOGIN</a> / <a className="sign-popup-btn" href="#" title="Register" >REGISTER</a>*/}
+                            <Link to="/Login" className="log-popup-btn" title="Login" >Iniciar Sesión </Link>/<Link to="/Registro" className="sign-popup-btn" title="Register" >Registro</Link>
                         </div>
                         <div className="social1">
                             <a href="#" title="Facebook"  target="_blank"><i className="fa fa-facebook-square"></i></a>
