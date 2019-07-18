@@ -1,5 +1,6 @@
 import React from 'react';
 import imagen from '../images/resource/popular-dish-img1.jpg';
+import { Link } from 'react-router-dom';
 
 function Platillo({_id,oComida}) {
     console.log(oComida.cover_photo)
