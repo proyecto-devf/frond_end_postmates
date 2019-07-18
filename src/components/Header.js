@@ -7,24 +7,6 @@ function Header(){
         <header className="stick">
                 <div className="topbar">
                     <div className="container">
-                        {/* <div className="select-wrp">
-                            <select data-placeholder="Feel Like Eating">
-                                <option>FEEL LIKE EATING</option>
-                                <option>Burger</option>
-                                <option>Pizza</option>
-                                <option>Fried Rice</option>
-                                <option>Chicken Shots</option>
-                            </select>
-                        </div>
-                        <div className="select-wrp">
-                            <select data-placeholder="Choose Location">
-                                <option>CHOOSE LOCATION</option>
-                                <option>New york</option>
-                                <option>Washington</option>
-                                <option>Chicago</option>
-                                <option>Los Angeles</option>
-                            </select>
-                        </div> */}
                         <div className="topbar-register">
                             {/*<a className="log-popup-btn" href="#" title="Login" >LOGIN</a> / <a className="sign-popup-btn" href="#" title="Register" >REGISTER</a>*/}
                             <Link to="/Login" className="log-popup-btn" title="Login" >Iniciar Sesión </Link>/<Link to="/Registro" className="sign-popup-btn" title="Register" >Registro</Link>
@@ -42,13 +24,13 @@ function Header(){
                     <nav>
                         <div className="menu-sec">
                             <ul>
-                                <li className="menu-item-has-children"><a href="#" title="HOMEPAGES" ><span className="red-clr">FOOD ORDERING</span>HOMEPAGES</a>
+                                <li className="menu-item-has-children"><a href="#" title="HOMEPAGES" ><span className="red-clr">Ordenar comida </span>Páginas de Inicio</a>
                                     <ul className="sub-dropdown">
-                                        <li><a href="index-2.html" title="HOMEPAGE 1" >HOMEPAGE 1</a></li>
-                                        <li><a href="index2.html" title="HOMEPAGE 2" >HOMEPAGE 2</a></li>
+                                        <li><a href="index-2.html" title="HOMEPAGE 1" >PAGINA 1</a></li>
+                                        <li><a href="index2.html" title="HOMEPAGE 2" >PAGINA 2</a></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item-has-children"><a href="#" title="RESTAURANTS" ><span className="red-clr">REAL FOOD</span>RESTAURANTS</a>
+                                <li className="menu-item-has-children"><a href="#" title="RESTAURANTS" ><span className="red-clr">Comidas</span>Restaurantes</a>
                                     <ul className="sub-dropdown">
                                         <li><a href="restaurant-found.html" title="RESTAURANT 1" >RESTAURANT 1</a></li>
                                         <li><a href="restaurant-found2.html" title="RESTAURANT 2" >RESTAURANT 2</a></li>
@@ -59,7 +41,7 @@ function Header(){
                                         <li><a href="our-services.html" title="RESTAURANT DETAILS" >OUR SERVICES</a></li>
                                     </ul>
                                 </li>
-                                <li className="menu-item-has-children"><a href="#" title="PAGES" ><span className="red-clr">REAL FOOD</span>PAGES</a>
+                                {/* <li className="menu-item-has-children"><a href="#" title="PAGES" ><span className="red-clr">REAL FOOD</span>PAGES</a>
                                     <ul className="sub-dropdown">
                                         <li className="menu-item-has-children"><a href="#" title="BLOG" >BLOG</a>
                                             <ul className="sub-dropdown">
@@ -104,15 +86,15 @@ function Header(){
                                         </li>
                                         <li>
                                             {/* <a href="register-reservation.html" title="REGISTER RESERVATION" ></a> */}
-                                            <Link to="/Restaurante" >REGISTER RESERVATION</Link>    
+                                            {/* <Link to="/Restaurante" >REGISTER RESERVATION</Link>    
                                         </li>
                                         <li><a href="how-it-works.html" title="HOW IT WORKS" >HOW IT WORKS</a></li>
                                         <li><a href="dashboard.html" title="USER PROFILE" >USER PROFILE</a></li>
                                         <li><a href="about-us.html" title="ABOUT US" >ABOUT US</a></li>
                                         <li><a href="food-detail.html" title="FOOD DETAIL" >FOOD DETAIL</a></li>
                                     </ul>
-                                </li>
-                                <li><a href="contact.html" title="CONTACT US" ><span className="red-clr">REAL FOOD</span>CONTACT US</a></li>
+                                </li> */} 
+                                <li><a href="contact.html" title="CONTACT US" ><span className="red-clr"> 9998763151 </span>Contáctenos</a></li>
                             </ul>
                             {/* <a  href="register-reservation.html"  >REGISTER RESTAURANT</a> */}
                             <Link to="/Restaurante" className="red-bg brd-rd4" title="Register" >REGISTER RESERVATION</Link>    
