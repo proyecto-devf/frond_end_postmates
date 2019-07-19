@@ -4,6 +4,7 @@ import Home from './views/Home';
 import Restaurante from './views/RegistroRestaurante';
 import Login from './views/Login';
 import Registro from './views/Registro';
+import Pedido from './views/Pedido';
 
 
 
