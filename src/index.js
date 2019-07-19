@@ -5,7 +5,7 @@ import { ApolloProvider as HooksProvider } from 'react-apollo-hooks';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.scss';
 import Routes from './Routes';
-import client from './graphql'
+import client from './graphql';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

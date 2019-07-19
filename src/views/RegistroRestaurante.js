@@ -9,10 +9,10 @@ import Input from '../components/Input';
 const CREATE_POST = gql`
     mutation crearRestaurante ($data: crearRestauranteInput!) {
         crearRestaurante(data: $data) {
-            nombre
-            descripcion
-            telefono
-			correo
+            nombre,
+			telefono,
+			correo,
+			descripcion,
 			activo
         }
     }
@@ -21,13 +21,10 @@ function RegistroRestaurante({ history }) {
 	const [sendSignup, { error }] = useMutation(CREATE_POST)
 
 	const catchSubmit = async (fields) => {
-		if (fields.password != "") {
-			await sendSignup({ variables: { data: { ...fields } } })
-			error ? alert("Hubo un error") : history.push('/RegistroRestaurante')
-			//alert("Usuario guardado correctamente")
-		} else {
-			alert("Datos incorrectos")
-		}
+
+		await sendSignup({ variables: { data: { ...fields } } })
+		error ? alert("Hubo un error") : //history.push('/RegistroRestaurante')
+		alert("Restaurante registrado")
 	}
 
 	const { inputs, handleInputChange, handleSubmit } = useForm(catchSubmit);

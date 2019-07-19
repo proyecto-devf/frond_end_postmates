@@ -50,7 +50,7 @@ function Home() {
 											</div>
 											
 											<div className="col-md-2 col-sm-3 col-lg-3 col-xs-12">
-												<button className="brd-rd2 red-bg" type="submit">SEARCH</button>
+												<button className="brd-rd2 red-bg" type="submit">BUSCAR</button>
 											</div>
 										</div>
 									</form>
