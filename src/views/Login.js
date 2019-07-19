@@ -13,7 +13,6 @@ mutation login($correo:String!,$contrasenia:String!){
  }
 }
 `
-
 function Login({ history }) {
     const [sendLogin] = useMutation(LOGIN);
     const submitLogin = async (fields) => {
@@ -39,32 +38,34 @@ function Login({ history }) {
                                 <div className="sign-popup-wrapper brd-rd5">
                                     <div className="sign-popup-inner brd-rd5">
                                         <div className="sign-popup-title text-center">
-                                            <h4 >Iniciar Sesion </h4>
+                                            <h1>Inicar Sesión</h1>
+                                            <span className="popup-seprator text-center"><i className="brd-rd50"> o </i></span>
                                             <form className="sign-form" onSubmit={handleSubmit}>
                                                 <div className="row">
-
-                                                    <Input name="correo"
-                                                        label="Correo"
-                                                        type="email"
-                                                        placeholder="Correo"
-                                                        value={inputs.correo}
-                                                        onChange={handleInputChange}
-
-                                                    />
-                                                    <Input name="contrasenia"
-                                                        label="Contraseña"
-                                                        type="password"
-                                                        placeholder="Contraseña"
-                                                        value={inputs.contrasenia}
-                                                        onChange={handleInputChange}
-                                                    />
-
-                                                    <div className="col-6 btn-enviar">
+                                                    <div className="col-md-12 lb-login">
+                                                        <Input name="correo"
+                                                            label="Correo"
+                                                            type="email"
+                                                            placeholder="Correo"
+                                                            value={inputs.correo}
+                                                            onChange={handleInputChange}
+                                                            required
+                                                        />
+                                                        <Input name="contrasenia"
+                                                            label="Contraseña"
+                                                            type="password"
+                                                            placeholder="Contraseña"
+                                                            value={inputs.contrasenia}
+                                                            onChange={handleInputChange}
+                                                            required
+                                                        />
+                                                    </div>
+                                                    <div className="col-5.5 btn-enviar-login">
                                                         <button className="red-bg brd-rd3" type="submit"> Enviar </button>
                                                     </div>
                                                     <div className="col-md-12 col-sm-12 col-lg-12 col-xs-12">
-                                                        <a className="sign-btn" href="#" title="" >Ya estas registrado? Ingresa</a>
-                                                        <a className="recover-btn" href="#" title="" >Recordar mi contraseña</a>
+                                                        <a className="sign-btn" href="#" title="">No eres miembro? Registrate</a>
+                                                        <a className="recover-btn" href="#" title="" >Olvidé mi contraseña</a>
                                                     </div>
                                                 </div>
                                             </form>
