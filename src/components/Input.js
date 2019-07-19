@@ -17,6 +17,8 @@ function Input({
 		  	className={className}
 		  	placeholder={placeholder} 
 			name={name}
+			value={value}
+			onChange={onChange}   
 		  	required={required} 
 		  />
 	  </div>
