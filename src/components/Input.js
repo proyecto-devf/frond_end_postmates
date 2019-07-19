@@ -16,6 +16,8 @@ function Input({
 		  	className="form-control" 
 		  	placeholder={placeholder} 
 			name={name}
+			value={value}
+			onChange={onChange}   
 		  	required={required} 
 		  />
 	  </div>
