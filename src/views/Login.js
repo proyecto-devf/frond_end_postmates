@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import gql from 'graphql-tag';
 import { useMutation } from 'react-apollo-hooks';
 import useForm from '../hooks/useForm';
@@ -7,11 +7,11 @@ import Footer from '../components/Footer';
 import Input from '../components/Input';
 
 const LOGIN = gql`
-	mutation LOGIN($correo:String!,$contrasenia:String!){
-		login(correo:$correo,contrasenia:$contrasenia){
-			token
-		}
-	}
+mutation login($correo:String!,$contrasenia:String!){
+ login(correo:$correo,contrasenia:$contrasenia){
+   token
+ }
+}
 `
 function Login({ history }) {
     const [sendLogin] = useMutation(LOGIN);

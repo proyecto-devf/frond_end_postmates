@@ -26,7 +26,7 @@ function Registro({ history }) {
         if (fields.password != "") {
             await sendSignup({ variables: { data: { ...fields } } })
             error ? alert("Hubo un error") : history.push('/Registro')
-            //alert("Usuario guardado correctamente")
+            alert("Usuario guardado correctamente")
         } else {
             alert("Datos incorrectos")
         }
