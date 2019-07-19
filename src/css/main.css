@@ -7126,3 +7126,12 @@ a.thanks-close:focus {color: #333;}
   margin-left: 250px;
   margin-top: 10px;
 }
+
+.lb-login{
+  margin-left: 250px; 
+}
+
+.btn-enviar-login{
+  margin-left: 450px;
+  margin-top: 10px;
+}

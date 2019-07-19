@@ -34,7 +34,7 @@ function Header(){
                                 <li className="menu-item-has-children"><a href="#" title="RESTAURANTS" ><span className="red-clr">Comidas</span>Restaurantes</a>
                                     <ul className="sub-dropdown">
                                         <li><Link to="/RegistrarComida" title="RESTAURANT 1" >Comidas</Link></li>
-                                        <li><a href="restaurant-found2.html" title="RESTAURANT 2" >Restaurante</a></li>
+                                        <li><Link to="/Restaurante" title="RESTAURANT 1" >Restaurante</Link></li>
                                     </ul>
                                 </li>
                                 <li><a href="contact.html" title="CONTACT US" ><span className="red-clr"> 9998763151 </span>Contáctenos</a></li>
