@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import gql from 'graphql-tag';
 import { useMutation } from 'react-apollo-hooks';
 import useForm from '../hooks/useForm';
@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Input from '../components/Input';
 
-const CREATE_POST = gql`
+const CREATE_RESTAURANTE = gql`
     mutation crearRestaurante ($data: crearRestauranteInput!) {
         crearRestaurante(data: $data) {
             nombre,
@@ -18,7 +18,7 @@ const CREATE_POST = gql`
     }
 `
 function RegistroRestaurante({ history }) {
-	const [sendSignup, { error }] = useMutation(CREATE_POST)
+	const [sendSignup, { error }] = useMutation(CREATE_RESTAURANTE)
 
 	const catchSubmit = async (fields) => {
 

@@ -1,8 +1,35 @@
 import React from 'react';
 import Input from '../components/Input';
 import Header from '../components/Header';
+import gql from 'graphql-tag';
+import { useMutation } from 'react-apollo-hooks';
+import useForm from '../hooks/useForm';
 
-function RegistrarComida(){
+
+const CREATE_COMIDA = gql`
+    mutation crearRestaurante ($data: crearRestauranteInput!) {
+        crearRestaurante(data: $data) {
+            nombre,
+			telefono,
+			correo,
+			descripcion,
+			activo
+        }
+    }
+`
+
+function RegistrarComida({history}){
+    const [sendSignup, { error }] = useMutation(CREATE_COMIDA)
+
+	const catchSubmit = async (fields) => {
+
+		await sendSignup({ variables: { data: { ...fields } } })
+		error ? alert("Hubo un error") : //history.push('/RegistroRestaurante')
+		alert("Restaurante registrado")
+	}
+
+	const { inputs, handleInputChange, handleSubmit } = useForm(catchSubmit);
+
     return(
         <>
             <Header />

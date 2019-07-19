@@ -36,7 +36,7 @@ function Home() {
 							<div style={{ backgroundImage: `url(${image})` }} className="fixed-bg"></div>
 							<div className="restaurant-searching text-center">
 								<div className="restaurant-searching-inner">
-									<h2>Order <span>Food Online From</span> the Best Restaurants</h2>
+									<h2>Elija <span>sus comidas en</span> los mejores restaurantes</h2>
 									<form className="restaurant-search-form brd-rd2">
 										<div className="row mrg10">
 											<div className="col-md-6 col-sm-5 col-lg-8 col-xs-12">
@@ -46,7 +46,6 @@ function Home() {
 													placeholder="Restaurante"
 													required
 												/>
-												{/* <div className=""><input className="brd-rd2" type="text" placeholder="Restaurant Name"></div> */}
 											</div>
 											
 											<div className="col-md-2 col-sm-3 col-lg-3 col-xs-12">
