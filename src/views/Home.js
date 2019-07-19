@@ -5,6 +5,7 @@ import Platillo from '../components/Platillo';
 import image from '../images/topbg.jpg';
 import gql from 'graphql-tag';
 import { useQuery } from 'react-apollo-hooks';
+import Input from '../components/Input';
 
 const listarComidas = gql`
 	query listarComidas {
@@ -38,40 +39,42 @@ function Home() {
 									<h2>Order <span>Food Online From</span> the Best Restaurants</h2>
 									<form className="restaurant-search-form brd-rd2">
 										<div className="row mrg10">
-											<div className="col-md-6 col-sm-5 col-lg-5 col-xs-12">
-												{/* <div className="input-field brd-rd2"><input className="brd-rd2" type="text" placeholder="Restaurant Name"></div> */}
+											<div className="col-md-6 col-sm-5 col-lg-8 col-xs-12">
+												<Input name="buscar"
+													className="input-field brd-rd2 w-100"
+													type="text"
+													placeholder="Restaurante"
+													required
+												/>
+												{/* <div className=""><input className="brd-rd2" type="text" placeholder="Restaurant Name"></div> */}
 											</div>
-											<div className="col-md-4 col-sm-4 col-lg-4 col-xs-12">
-												{/* <div className="input-field brd-rd2"><i className="fa fa-map-marker"></i><input className="brd-rd2" type="text" placeholder="Search Location"><i className="fa fa-location-arrow"></i></div> */}
-											</div>
+											
 											<div className="col-md-2 col-sm-3 col-lg-3 col-xs-12">
 												<button className="brd-rd2 red-bg" type="submit">SEARCH</button>
 											</div>
 										</div>
 									</form>
 								</div>
-								{/* <img className="left-scooty-mockup" src="assets/images/resource/restaurant-mockup1.png" alt="restaurant-mockup1.png" itemprop="image">
-								<img className="bottom-clouds-mockup" src="assets/images/resource/clouds.png" alt="clouds.png" itemprop="image"> */}
 							</div>
 						</div>
 					</section>
 					<section>
 						<div className="block">
-						<div className="container">
-							<div className="row">
-								<div className="col-md-12 col-sm-12 col-lg-12">
-									<div className="title1-wrapper text-center">
-										<div className="title1-inner">
-											<span>Your Favourite Food</span>
-											<h2 >Choose & Enjoy</h2>
+							<div className="container">
+								<div className="row">
+									<div className="col-md-12 col-sm-12 col-lg-12">
+										<div className="title1-wrapper text-center">
+											<div className="title1-inner">
+												<span>Su comida favorita</span>
+												<h2 >Platillos dispobiles</h2>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div className="col-12">
-								<div className="container">
-							   </div>
-									<div className="row remove-ext5">
-											{	
+									<div className="col-12">
+										<div className="container">
+										</div>
+										<div className="row remove-ext5">
+											{
 												//<h4>Loading...</h4>
 												//console.log(listarComidas)
 												loading ? <h4>Loading...</h4>
@@ -87,7 +90,7 @@ function Home() {
 						</div>
 					</section>
 				</main>
-			<Footer/>
+				<Footer />
 			</>
 		)
 	}

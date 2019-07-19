@@ -4,6 +4,7 @@ function Input({
 	placeholder, 
 	value, 
 	onChange, 
+	className,
 	type, 
 	name, 
 	label, 
@@ -13,7 +14,7 @@ function Input({
 		<div className="col-md-6 col-sm-6 col-lg-6">
 		  <label>{label}</label>
 		  <input type={type} 
-		  	className="form-control" 
+		  	className={className}
 		  	placeholder={placeholder} 
 			name={name}
 		  	required={required} 

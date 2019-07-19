@@ -11,7 +11,7 @@ function Routes() {
     <>
         <Route exact path="/" component={Home} />
         <Route exact path="/Restaurante" component={Restaurante} />
-        <Route exact path="/Pedido" component={Pedido} />
+        <Route exact path="/Pedido/:id" component={Pedido} />
     </>
   );
 }

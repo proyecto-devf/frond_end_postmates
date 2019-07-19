@@ -1,5 +1,4 @@
 import React from 'react';
-import imagen from '../images/resource/popular-dish-img1.jpg';
 import { Link } from 'react-router-dom';
 
 function Platillo({_id,oComida}) {
@@ -20,7 +19,9 @@ function Platillo({_id,oComida}) {
                     </h4>
                     <p >{oComida.descripcion}</p>
                     <span className="price">$ {oComida.precio}</span>
-                    <a className="brd-rd2" href="food-detail.html" title="Order Now" >Order Now</a>
+                    <Link to={`/pedido/${_id}`} className="brd-rd2" title="Ordene">
+                         Agregar
+                    </Link>
                     <div className="restaurant-info">
                         <div className="restaurant-info-inner">
                             <span className="red-clr">Restaurante: Pla</span>
