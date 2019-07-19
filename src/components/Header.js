@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import imagen from '../images/logo.png';
+
 
 
 function Header(){
@@ -21,7 +23,9 @@ function Header(){
                 </div>
                 <div className="logo-menu-sec">
                     <div className="container">
-                    <div className="logo"><h1 ><a href="index-2.html" title="Home" ></a></h1></div>
+                    <div className="logo"><h1 ><a href="index-2.html" title="Home" >
+                    <img src={imagen} alt="preview" className="d-block"/>
+                        </a></h1></div>
                     <nav>
                         <div className="menu-sec">
                             <ul>
@@ -29,7 +33,7 @@ function Header(){
                                 </li>
                                 <li className="menu-item-has-children"><a href="#" title="RESTAURANTS" ><span className="red-clr">Comidas</span>Restaurantes</a>
                                     <ul className="sub-dropdown">
-                                        <li><a href="restaurant-found.html" title="RESTAURANT 1" >Comidas</a></li>
+                                        <li><Link to="/RegistrarComida" title="RESTAURANT 1" >Comidas</Link></li>
                                         <li><a href="restaurant-found2.html" title="RESTAURANT 2" >Restaurante</a></li>
                                     </ul>
                                 </li>

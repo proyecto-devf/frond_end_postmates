@@ -1,8 +1,12 @@
 import React from 'react';
+import Input from '../components/Input';
+import Header from '../components/Header';
 
 function RegistrarComida(){
     return(
-        <main className="block top-padd30 gray-bg registro">
+        <>
+            <Header />
+            <main className="block top-padd30 gray-bg registro">
         <div className="container">
             <div className="row">
                 <div className="col-md-12 col-sm-12 col-lg-12">
@@ -13,13 +17,11 @@ function RegistrarComida(){
                                     <h4 >Registrarse</h4>
                                 </div>
                                 <span className="popup-seprator text-center"><i className="brd-rd50"> o </i></span>
-                                <form className="sign-form" onSubmit={handleSubmit}>
+                                <form className="sign-form" >
                                     <div className="row">
                                         <Input name="nombre"
                                             label="Nombre"
                                             type="text"
-                                            value={inputs.nombre}
-                                            onChange={handleInputChange}
                                             placeholder="Nombre"
                                             required
                                         />
@@ -27,15 +29,11 @@ function RegistrarComida(){
                                             label="Apellido"
                                             type="text"
                                             placeholder="Apellido"
-                                            value={inputs.apellido}
-                                            onChange={handleInputChange}
                                         />
                                         <Input name="genero"
                                             label="sexo"
                                             type="text"
                                             placeholder="sexo"
-                                            value={inputs.genero}
-                                            onChange={handleInputChange}
                                             required
                                         />
                                         <Input name="telefono"
@@ -43,24 +41,18 @@ function RegistrarComida(){
                                             type="text"
 
                                             placeholder="Telefono"
-                                            value={inputs.telefono}
-                                            onChange={handleInputChange}
 
                                         />
                                         <Input name="correo"
                                             label="Correo"
                                             type="email"
                                             placeholder="Correo"
-                                            value={inputs.correo}
-                                            onChange={handleInputChange}
 
                                         />
                                         <Input name="contrasenia"
                                             label="Contraseña"
                                             type="password"
                                             placeholder="Contraseña"
-                                            value={inputs.contrasenia}
-                                            onChange={handleInputChange}
                                         />
 
                                         <div className="col-6 btn-enviar">
@@ -79,5 +71,9 @@ function RegistrarComida(){
             </div>
         </div>
     </main>
+        </>
+        
     )
 }
+
+export default RegistrarComida;
