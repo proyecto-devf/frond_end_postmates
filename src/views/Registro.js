@@ -24,11 +24,11 @@ function Registro({ history }) {
 
     const catchSubmit = async (fields) => {
         if (fields.password != "") {
-            // delete fields.confirm_password
             await sendSignup({ variables: { data: { ...fields } } })
             error ? alert("Hubo un error") : history.push('/Registro')
+            //alert("Usuario guardado correctamente")
         } else {
-            alert("Los Passwords no coinciden")
+            alert("Datos incorrectos")
         }
 
     }
