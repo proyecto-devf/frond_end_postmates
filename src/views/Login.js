@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import Input from '../components/Input';
 
 const LOGIN = gql`
-	mutation LOGIN($correo:String!,$correo:String!){
+	mutation LOGIN($correo:String!,$contrasenia:String!){
 		login(correo:$correo,contrasenia:$contrasenia){
 			token
 		}
@@ -57,13 +57,17 @@ function Login({history}) {
 														<Input name="correo"
                                                             label="Correo"
                                                             type="email"
-                                                            placeholder="Correo"
+															placeholder="Correo"
+															value={inputs.correo}
+															onChange={handleInputChange}
                                                             required
                                                         />
                                                         <Input name="contrasenia"
                                                             label="Contraseña"
                                                             type="password"
-                                                            placeholder="Contraseña"
+															placeholder="Contraseña"
+															value={inputs.contrasenia}
+															onChange={handleInputChange}
                                                             required
                                                         />
                                                             <button class="red-bg brd-rd3" type="submit">Ingresar</button>
