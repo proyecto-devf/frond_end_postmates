@@ -15,7 +15,7 @@ function Header() {
                         {
                             payload().isAuthenticated ? (
                                 <>
-                                    <Link to="/" className="log-popup-btn" title="Login" ><p>{payload().user.correo}!!! </p></Link>  /  <Link to="/" className="sign-popup-btn" title="Register" ><p>Salir</p></Link>
+                                    <Link to="/" className="log-popup-btn" title="Login" ><p>{payload().user.correo}!!! </p></Link>  /  <Link to="/Logout" className="sign-popup-btn" title="Register" ><p>Salir</p></Link>
                                 </>
                             ) : (
                                     <>
